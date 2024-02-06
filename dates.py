@@ -64,7 +64,7 @@ print('Day: ' + str(current_date.day))
 print('Month: ' + str(current_date.month))
 print('Year: ' + str(current_date.year))
 
-# sometines you receive the date as a string and need to convert it to a datetime object
+# sometimes you receive the date as a string and need to convert it to a datetime object
 from datetime import datetime
 birthday = input('When is your birthday (dd/mm/yyyy)? ')
 birthday_date = datetime.strptime(birthday, '%d/%m/%Y')
