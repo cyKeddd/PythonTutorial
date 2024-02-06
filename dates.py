@@ -74,14 +74,17 @@ print('Birthday: ' + str(birthday_date))
 # converting it to a datetime allows you to use the date functions
 from datetime import datetime, timedelta
 birthday = input('When is your birthday (dd/mm/yyyy)? ')
-birthday_date = datetime.strptime(birthday, '%d/%m/%')
+birthday_date = datetime.strptime(birthday, '%d/%m/%Y')
 print('Birthday: ' + str(birthday_date))
 one_day = timedelta(days=1)
 birthday_eve = birthday_date - one_day
-print('Day before birthday: ' + str(birthday_eve))
+print('Day before birthday: ' + str(birth))
 
+# make sure you add exception handling in case the date entered is invalid
+from datetime import datetime
+birthday = input('When is your birthday (dd/mm/yyyy)?')
 
-
-
+birthday_date = datetime.strptime(birthday, '%d/%m/%Y')
+print('Birthday: ' + str(birthday_date))
 
 # btw if you are seeing this and already dont know use cls in the terminal to clear all your stuff if it is cluttering
