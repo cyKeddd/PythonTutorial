@@ -56,3 +56,10 @@ current_date = current_time.strftime("%B, %d, %Y")
 # Print the modified date and time
 print("Current time in 12-hour format: ", current_time_12_hour)
 print("Current date: ", current_date)
+
+# use date functions to control date formatting
+from datetime import datetime
+current_date = datetime.now()
+print('Day: ' + str(current_date.day))
+print('Month: ' + str(current_date.month))
+print('Year: ' + str(current_date.year))
