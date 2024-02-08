@@ -78,7 +78,7 @@ birthday_date = datetime.strptime(birthday, '%d/%m/%Y')
 print('Birthday: ' + str(birthday_date))
 one_day = timedelta(days=1)
 birthday_eve = birthday_date - one_day
-print('Day before birthday: ' + str(birth))
+print('Day before birthday: ' + str(birthday_eve))
 
 # make sure you add exception handling in case the date entered is invalid
 from datetime import datetime
