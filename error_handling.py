@@ -25,4 +25,12 @@ except:
     print('Something really went wrong')
 finally: 
     print('This always runs on success or failure')
+
+# logic errors
+# this code will not run at all
+x = 206
+y = 42
+if x < y:
+    print(str(x) + ' is greater than ' + str(y))
+
     
